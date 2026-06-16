@@ -9,9 +9,11 @@ import requests
 if sys.stdout.encoding != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8')
 
-INPUT_CSV = "vtubers_avg_online.csv"
-OUTPUT_CSV = "vtubers_wide_stats.csv"
-CACHE_FILE = "vtuber_images_cache.json"
+INPUT_CSV = os.path.join("data", "vtubers_avg_online.csv")
+OUTPUT_CSV = os.path.join("data", "vtubers_wide_stats.csv")
+CACHE_FILE = os.path.join("data", "vtuber_images_cache.json")
+# Ensure the data directory exists
+os.makedirs("data", exist_ok=True)
 
 DEFAULT_AVATAR = "https://static-cdn.jtvnw.net/jtv_user_pictures/bc0af20e-b4db-4205-a2ba-f6aaf2903c1d-profile_image-600x600.png"
 
