@@ -13,7 +13,7 @@ if sys.stdout.encoding != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8')
 
 CSV_FILENAME = os.path.join("data", "vtubers_avg_online.csv")
-VTUBERS_FILENAME = "vtubers.txt"
+VTUBERS_FILENAME = os.path.join("data", "vtubers.txt")
 # Ensure the data directory exists
 os.makedirs("data", exist_ok=True)
 

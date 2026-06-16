@@ -39,7 +39,7 @@ TwitchTracker не отдаёт статистику в открытом HTML-к
 
 * **`scrape_all_vtubers.py`**
   Основной скрипт пакетного сбора данных.
-  * Читает никнеймы из [vtubers.txt](vtubers.txt).
+  * Читает никнеймы из [data/vtubers.txt](file:///C:/FRA3A/projects/vtubers-online-over-time/data/vtubers.txt).
   * Делает запросы к TwitchTracker с вежливой случайной задержкой от 1 до 3 секунд между стримерами для предотвращения блокировок IP.
   * Работает в режиме **дозаписи** — если скрипт прервать, при следующем запуске он прочтет уже обработанные каналы из выходного CSV и пропустит их.
   * Сохраняет статистику по месяцам в файл [data/vtubers_avg_online.csv](file:///C:/FRA3A/projects/vtubers-online-over-time/data/vtubers_avg_online.csv) в длинном формате (`month,vtuber,avg_viewers`).
@@ -73,7 +73,7 @@ TwitchTracker не отдаёт статистику в открытом HTML-к
 ## 📊 Структуры файлов данных
 
 ### Входные данные:
-* **[vtubers.txt](vtubers.txt)** — текстовый файл с никнеймами стримеров (один в строке).
+* **[data/vtubers.txt](file:///C:/FRA3A/projects/vtubers-online-over-time/data/vtubers.txt)** — текстовый файл с никнеймами стримеров (один в строке).
 
 ### Выходные данные:
 * **[data/vtubers_avg_online.csv](file:///C:/FRA3A/projects/vtubers-online-over-time/data/vtubers_avg_online.csv)** — длинный формат:
